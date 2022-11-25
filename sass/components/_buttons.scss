@@ -1,0 +1,107 @@
+.btn {
+    background-color: var(--accent-color);
+    color: var(--primary-whit-color);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: 0;
+    min-width: 152px;
+
+    transition: background-color var(--trinsit-time) var(--timing-functoin);
+
+
+&:hover,
+&:focus {
+  background-color: var(--button-background-color);
+}
+  }
+
+  .footer-submit-btn {
+    display: flex;
+    padding: 10px 28px;
+    gap: 10px;
+    margin: 0;
+
+&:hover,
+&:focus {
+  background-color: var(--button-background-color);
+}
+
+&::after {
+    content: " ";
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon\ send.svg);
+    background-size: contain;
+    /* background-origin: border-box; */
+  
+    fill: var(--primary-whit-color);
+  }
+  
+  }
+
+  .filters-button {
+    background-color: #f5f4fa;
+    color: var(--titel-text-color);
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    cursor: pointer;
+  
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 0;
+    
+    transition: background-color var(--trinsit-time) var(--timing-functoin),
+    color var(--trinsit-time) var(--timing-functoin);
+
+&:hover,
+&:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-whit-color);
+}
+  }
+/* modal button */
+  .btn-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: var(--primary-whit-color);
+    transition: fill var(--trinsit-time) var(--timing-functoin) ,visibility var(--trinsit-time) var(--timing-functoin);
+  
+   &:hover,
+  &:focus {
+      fill:var(--accent-color)
+    }
+  }
+
+  .modal-close-icon {
+    color:currentColor;
+  }
+
+  .submit-btn {
+    padding: 10px 52px;
+  }

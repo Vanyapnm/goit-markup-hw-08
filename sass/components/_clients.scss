@@ -1,0 +1,25 @@
+.clients__list {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+  }
+  
+  .clients__link {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    transition: fill var(--trinsit-time) var(--timing-functoin),
+    border var(--trinsit-time) var(--timing-functoin);
+
+    &:hover ,
+    &:focus {
+      fill: var(--accent-color);
+      border: 1px solid var(--accent-color);
+    }  
+  }
+  
