@@ -6,7 +6,12 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 30px;
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width:$desktop) {
+      margin-bottom: 30px;
+    }
   }
   
   .team-social__link {
@@ -28,9 +33,21 @@
   }
 
   .team__list {
+    @media screen and (min-width:$mobile) and (max-width:767px) {
+          &:not(:last-child) {
+              margin-bottom: 30px;
+            }
+    }
+
+    @media screen and (min-width:$tablet) {
     display: flex;
     justify-content: center;
-    
+    flex-wrap: wrap;
+    gap: 30px;
+    }
+    @media screen and (min-width:$tablet) and (max-width:1199px) {
+      flex-basis: calc(100%/2);
+    }
   }
   
   .team__name {
@@ -45,6 +62,15 @@
   
   .team__img {
     margin-bottom: 30px;
+    @media screen and (min-width:$mobile) {
+      width: 450px;
+    }
+    @media screen and (min-width:$tablet) {
+      width:354px;
+    }
+    @media screen and (min-width:$desktop){
+      width:270px;
+    }
   }
   
   .team__position {
@@ -57,10 +83,14 @@
   
   .team__item {
     background-color: var(--primary-whit-color);
+      @media screen and (max-width:767px) {
+          &:not(:last-child) {
+            margin-bottom: 30px;
+          }
+        }
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
+      // &:not(:last-child) {
+      //   margin-right: 30px;
+      // }
   }

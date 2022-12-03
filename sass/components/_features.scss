@@ -3,16 +3,42 @@
   }
   
   .features-list {
-    display: flex;
-    justify-content: center;
+  @media screen and (min-width: $mobile) {
+                    &:not(:last-child) {
+                        margin-bottom: 30px;
+                      };
+  }
+
+@media screen and (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap:30px;
+      margin-bottom: 0;
+}
   }
   
   .features-list .item {
-    width: 270px;
-
-    &:not(:last-child) {
-        margin-right: 30px;
+    width: 450px;
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+      &:not(:last-child) {
+          margin-bottom: 30px;
+        }
       }
+    
+
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+
+      // flex-basis: calc((100% - 30px) / 2);
+    }
+
+             @media screen and (min-width: $desktop) {
+               width: 270px;
+                  // &:not(:last-child) {
+                  //     margin-right: 30px;
+                  //   }
+             }
 
     &::before {
         display: block;

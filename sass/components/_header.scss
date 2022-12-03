@@ -10,8 +10,12 @@ header {
   }
   
   .social-links {
-    display: flex;
-    margin-left: 93px;
+    display: none;
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        margin-left: 93px;
+    }
+ 
   }
   
   .social-links .item {
@@ -62,9 +66,12 @@ header {
   /*contacts link*/
   
   .contacts-link {
+display: none;
+@media screen and (min-width:$tablet) {
     display: flex;
-    margin-left: auto;
-    align-items: center;
+      margin-left: auto;
+      align-items: center;
+}
   }
   
   .contacts-link .item{

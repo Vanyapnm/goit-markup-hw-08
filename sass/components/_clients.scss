@@ -1,8 +1,15 @@
 .clients__list {
+  @media screen and (min-width:$mobile) {
     display: flex;
     justify-content:center;
     gap: 30px;
+    flex-wrap: wrap;
+    flex-basis: calc(100%/2);
   }
+  @media screen and (min-width:$tablet) and (max-width:1199px) {
+    flex-basis: calc(100%/3)
+  }
+}
   
   .clients__link {
     display: flex;
