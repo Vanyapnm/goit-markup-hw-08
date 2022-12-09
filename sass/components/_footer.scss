@@ -12,13 +12,7 @@ footer {
     }
     @media screen and (min-width:$desktop) {
           display: flex;
-            // align-items: baseline;
-    }
-  }
-
-  .adress-footer {
-    @media screen and (min-width:$desktop) {
-margin-right: 70px;
+            align-items: baseline;
     }
   }
   
@@ -36,6 +30,15 @@ margin-right: 70px;
     margin-bottom: 20px;
     display: block;
   }
+
+  .adress-footer {
+    @media screen and (max-width:767px) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width:$desktop) {
+    margin-right: 70px;
+    }
+  }
   
   .address-footer-list .link {
     color: var(--primary-whit-color) 60%;
@@ -50,9 +53,6 @@ margin-right: 70px;
   }
   
   .address-footer-list {
-    @media screen and (max-width:1199px) {
-      margin-bottom: 60px;
-    }
     font-style: normal;
   }
   
@@ -69,16 +69,7 @@ margin-right: 70px;
     }
   }
   
-  .social-footer {
-    @media screen and (min-width:$desktop){
-      margin-right: 93px;
-    }
-  }
-  
   .social-footer-list {
-    @media screen and (max-width:767px) {
-      margin-bottom: 60px;
-    }
     display:flex;
     gap: 10px;
     justify-content: center;
@@ -116,10 +107,15 @@ margin-right: 70px;
   }
 
     .adress-social-flex {
+      margin-bottom: 60px;
       @media screen and (min-width:$tablet) {
         display: flex;
       }
       @media screen  and (min-width:$tablet) and (max-width:1199px) {
         justify-content:space-around;
       }
+                                                        @media screen and (min-width:$desktop) {
+                                                          margin-right: 70px;
+                                                          align-items: baseline;
+                                                        }
     }

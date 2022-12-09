@@ -7,8 +7,17 @@ header {
   .main-nav {
     display: flex;
     align-items: center;
+        height: 60px;
+        
+          @media screen and (min-width:$tablet) {
+            height: 80px;
+          }
   }
-  
+
+     .main-navigation {
+       display: flex;
+       align-items: center;
+     }
   .social-links {
     display: none;
     @media screen and (min-width:$tablet) {
