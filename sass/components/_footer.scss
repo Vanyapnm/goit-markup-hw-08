@@ -5,16 +5,27 @@ footer {
   }
 
   .footer {
-    display: flex;
-    align-items: baseline;
-
+    @media screen and (max-width:1199px) {
+          display: block;
+            text-align: center;
+            
+    }
+    @media screen and (min-width:$desktop) {
+          display: flex;
+            // align-items: baseline;
+    }
   }
 
   .adress-footer {
-    margin-right: 70px;
+    @media screen and (min-width:$desktop) {
+margin-right: 70px;
+    }
   }
   
   .logo-link-footer {
+    @media screen and (max-width:1199px) {
+      margin-bottom: 28px;
+    }
     color: var(--primary-whit-color);
     font-family: Raleway, cursive;
     text-decoration: none;
@@ -26,7 +37,7 @@ footer {
     display: block;
   }
   
-  .link-footer .link {
+  .address-footer-list .link {
     color: var(--primary-whit-color) 60%;
     text-decoration: none;
     font-size: 14px;
@@ -34,23 +45,40 @@ footer {
     letter-spacing: 0.03em;
   }
   
-  .link-footer .second-link {
+  .address-footer-list .second-link {
     color: var(--primary-whit-color);
   }
   
-  .link-footer {
+  .address-footer-list {
+    @media screen and (max-width:1199px) {
+      margin-bottom: 60px;
+    }
     font-style: normal;
   }
   
-  .link-footer .item:not(:last-child) {
-    margin-bottom: 9px;
+.address-footer-list .item {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .address-footer-list .item:not(:last-child) {
+    margin-bottom: 12px;
+    @media screen and (min-width:$desktop) {
+      margin-bottom: 9px;
+    }
   }
   
   .social-footer {
-    margin-right: 93px;
+    @media screen and (min-width:$desktop){
+      margin-right: 93px;
+    }
   }
   
   .social-footer-list {
+    @media screen and (max-width:767px) {
+      margin-bottom: 60px;
+    }
     display:flex;
     gap: 10px;
     justify-content: center;
@@ -86,3 +114,12 @@ footer {
     color: #FFFFFF;
     
   }
+
+    .adress-social-flex {
+      @media screen and (min-width:$tablet) {
+        display: flex;
+      }
+      @media screen  and (min-width:$tablet) and (max-width:1199px) {
+        justify-content:space-around;
+      }
+    }

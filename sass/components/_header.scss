@@ -68,19 +68,24 @@ header {
   .contacts-link {
 display: none;
 @media screen and (min-width:$tablet) {
+  display: block;
+  margin-left: auto;
+}
+@media screen and (min-width:$desktop) {
     display: flex;
-      margin-left: auto;
       align-items: center;
+      
+      & .item:not(:last-child) {
+          margin-right: 40px;
+        }
 }
   }
-  
-  .contacts-link .item{
-    &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
   
   .contacts-link .contacts {
+    @media screen and (max-width:1199px) {
+      padding-top: 5px;
+        padding-bottom: 5px;
+    }
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -93,6 +98,7 @@ display: none;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color var(--trinsit-time) var(--timing-functoin);
+    
 
     &:hover,
     &:focus {
