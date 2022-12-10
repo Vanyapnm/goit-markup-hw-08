@@ -53,7 +53,7 @@
                          background-image: linear-gradient(to right,
                          rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                         url(../images/hero/img_xl@1x.jpg);
+                         url(../images/hero/img_big@1x.jpg);
                               
                                                             /* desktop screen retina */
                                                             @media screen and (min-device-pixel-ratio: 2),
@@ -62,7 +62,7 @@
                                                               background-image: linear-gradient(to right,
                                                                   rgba(47, 48, 58, 0.4),
                                                                   rgba(47, 48, 58, 0.4)),
-                                                                url(../images/hero/img_xl@2x.jpg);
+                                                                url(../images/hero/img_big@2x.jpg);
                                                             }
                                                   }
            
