@@ -48,12 +48,12 @@
                       url(../images/hero/img_l@2x.jpg);
                   }
 }
-                                                            @media screen and (min-width:769px) {
-                                                              /* desktop screen */
-                                                              background-image: linear-gradient(to right,
-                                                                  rgba(47, 48, 58, 0.4),
-                                                                  rgba(47, 48, 58, 0.4)),
-                                                                url(../images/hero/img_xl@1x.jpg);
+                         @media screen and (min-width:769px) {
+                         /* desktop screen */
+                         background-image: linear-gradient(to right,
+                         rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                         url(../images/hero/img_xl@1x.jpg);
                               
                                                             /* desktop screen retina */
                                                             @media screen and (min-device-pixel-ratio: 2),
@@ -64,7 +64,7 @@
                                                                   rgba(47, 48, 58, 0.4)),
                                                                 url(../images/hero/img_xl@2x.jpg);
                                                             }
-                                                                                                  }
+                                                  }
            
   }
  .hero-titel {
